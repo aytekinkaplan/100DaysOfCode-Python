@@ -1,54 +1,28 @@
-print(r'''
-*******************************************************************************
-          |                   |                  |                     |
- _________|________________.=""_;=.______________|_____________________|_______
-|                   |  ,-"_,=""     `"=.|                  |
-|___________________|__"=._o`"-._        `"=.______________|___________________
-          |                `"=._o`"=._      _`"=._                     |
- _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
-|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
-|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
-          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
- _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
-|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
-|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
-____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
-/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
-____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
-/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
-____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
-/______/______/______/______/______/______/______/______/______/______/_____ /
-*******************************************************************************
-''')
-print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure.")
+import random
+# Random number generator
 
-# First choice
-choice1 = input('You\'re at a crossroad. Where do you want to go? Type "left" or "right": ').lower()
+import random
 
-if choice1 == "left":
-    # Second choice
-    choice2 = input(
-        'You\'ve come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across: ').lower()
+# Random number between 1 and 10
+random_number = random.randint(1, 10)
+print(random_number)
 
-    if choice2 == "wait":
-        # Third choice
-        choice3 = input(
-            'You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow, and one blue. Which colour do you choose? ').lower()
+# Random number between 0 and 1
+random_number = random.random()
+print(random_number)
 
-        if choice3 == "red":
-            print("It's a room full of fire. Game Over.")
-        elif choice3 == "yellow":
-            print("You found the treasure! You Win!")
-        elif choice3 == "blue":
-            print("You enter a room of beasts. Game Over.")
-        else:
-            print("You chose a door that doesn't exist. Game Over.")
-    elif choice2 == "swim":
-        print("You get attacked by an angry trout. Game Over.")
-    else:
-        print("Invalid choice. Game Over.")
-elif choice1 == "right":
-    print("You fell into a hole. Game Over.")
-else:
-    print("Invalid choice. Game Over.")
+# Random number between 0 and 100
+random_number = random.randint(0, 100)
+print(random_number)
+
+# Random number between 1 and 100
+random_number = random.randint(1, 100)
+print(random_number)
+
+# Random number between 1 and 1000
+random_number = random.randint(1, 1000)
+print(random_number)
+
+# Random string
+random_string = random.choice(["rock", "paper", "scissors"])
+print(random_string)
