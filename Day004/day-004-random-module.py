@@ -1,16 +1,22 @@
-height = float(input("enter your height in m: "))
-weight = float(input("enter your weight in kg: "))
+import random
 
-bmi = round(weight / (height ** 2))
-print(bmi)
+random_number = random.randint(1, 10)
+print(random_number)
 
-if bmi < 18.5:
-    print("You are underweight.")
-elif bmi < 25:
-    print("You have a normal weight.")
-elif bmi < 30:
-    print("You are slightly overweight.")
-elif bmi < 35:
-    print("You are obese.")
-else:
-    print("You are clinically obese.")
+random_names = random.choice(["Alice", "Bob", "Charlie"])
+print(random_names)
+
+random_float = random.random()
+print(random_float)
+
+random_color = random.choice(["red", "green", "blue"])
+print(random_color)
+
+random_decimal = random.uniform(1, 5)
+print(random_decimal)
+
+random_numbers = random.sample(range(1, 11), 9)
+print(random_numbers)
+
+rgb = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+print(rgb)
