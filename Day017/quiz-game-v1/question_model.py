@@ -1,9 +1,7 @@
 class Question:
-    def __init__(self, q_category, q_difficulty, q_question, q_correct_answer, q_incorrect_answers):
-        self.category = q_category
-        self.difficulty = q_difficulty
-        self.question = q_question
-        self.correct_answer = q_correct_answer
-        self.incorrect_answers = q_incorrect_answers
-
-
+    def __init__(self, category, difficulty, question, correct_answer, incorrect_answers):
+        self.category = category
+        self.difficulty = difficulty
+        self.question = question
+        self.correct_answer = correct_answer
+        self.incorrect_answers = incorrect_answers
