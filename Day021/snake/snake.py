@@ -1,11 +1,11 @@
 from turtle import Turtle
-
 STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
 UP = 90
 DOWN = 270
 LEFT = 180
 RIGHT = 0
+
 
 class Snake:
 
@@ -26,7 +26,6 @@ class Snake:
         self.segments.append(new_segment)
 
     def extend(self):
-        # Add a new segment to the pong
         self.add_segment(self.segments[-1].position())
 
     def move(self):
