@@ -141,7 +141,7 @@ while True:
         score_display.clear()
         score_display.write(f"Score: {score} High Score: {high_score}", align="center", font=("Courier", 24, "normal"))
 
-    # Move the snake body
+    # Move the pong body
     for index in range(len(segments) - 1, 0, -1):
         x = segments[index - 1].xcor()
         y = segments[index - 1].ycor()
